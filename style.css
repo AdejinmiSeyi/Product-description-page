@@ -61,6 +61,12 @@ a{
     justify-content: center;
 }
 
+
+#cart-icon{
+    border:none;
+    background: none;
+}
+
 .item-1 {
     height: 375px;
     width: 375px;
@@ -128,39 +134,41 @@ p {
 
 .page-buttons {
     display: flex;
-    margin-right: 1rem;
+    align-items: center;
     
 }
 
 
 #item-counter {
-    padding: 10px;
+    padding: 7px 10px;
+    
     background-color: gainsboro;
+    border-radius: 10px;
     font-family: 'Mulish';
     font-size: 16px;
     font-weight: 700;
-    border-radius: 10px;
-    border: none;
+    
     color: orange;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 
 }
 
 #item-counter p {
-    padding: 0 40px;
+    padding: 0px 20px;
     color: #000
 
 }
 
 
-/* #item-counter span {
-    color: #000;
-    padding: 0 5px;
-} */
+#item-counter button {
+    border:none;
+    background: none;
+}
 
-.page-buttons button {
+#add-to-cart{
     padding: 10px 50px;
     background-color: orange;
     margin-left: 1rem;
@@ -174,10 +182,10 @@ p {
     cursor: pointer; 
 }
 
-button svg {
-    /* position: relative; */
-    margin-right: 10px;
+#add-to-cart svg{
+    margin-right: 5px;
 }
+
 
 .attribution {
     position: fixed;
