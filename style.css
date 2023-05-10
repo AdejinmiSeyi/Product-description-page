@@ -8,6 +8,11 @@
     padding: 0;
 }
 
+:root{
+    --after-content: '';
+
+}
+
 body {
     font-family: 'Mulish', sans-serif;
 }
@@ -54,10 +59,11 @@ a{
 }
 
 .icons {
-   
+    /* border: solid 1px blue; */
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 20%;
 }
 
 
@@ -181,7 +187,7 @@ p {
     background: none;
 }
 
-#add-to-cart, .checkout-button{
+.add-to-cart, .checkout-button{
     padding: 10px 50px;
     background-color: orange;
     margin-left: 1rem;
@@ -195,7 +201,7 @@ p {
     cursor: pointer; 
 }
 
-#add-to-cart svg{
+.add-to-cart svg{
     margin-right: 5px;
 }
 
@@ -216,7 +222,7 @@ p {
 }
 
 .non-empty::after {
-    content: '2';
+    content: var(--after-content);
     font-size: 12px;
     width: 16px;
     display: inline-block;
